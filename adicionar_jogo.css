@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Definições Gerais */
+body {
+    font-family: 'Press Start 2P', cursive; /* Fonte pixelada para jogos */
+    background-color: #1b1b1b;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #f39c12;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #f39c12;
+    text-shadow: 2px 2px #c0392b;
+}
+
+/* Estilo da Navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    background-color: #c0392b;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 3px solid #f39c12;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e74c3c;
+    transform: scale(1.1);
+}
+
+/* Estilo do Formulário */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #f39c12;
+}
+
+/* Estilo dos Campos do Formulário */
+label {
+    font-size: 18px;
+    color: #f39c12;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #f39c12;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #e74c3c;
+    outline: none;
+}
+
+/* Estilo do Botão de Envio */
+button {
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    background-color: #3498db;
+    padding: 10px 20px;
+    border: 3px solid #2980b9;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 10px 0;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Estilo do Rodapé */
+footer {
+    background-color: #111;
+    color: #f39c12;
+    text-align: center;
+    padding: 15px;
+    border-top: 5px solid #c0392b;
+}
+
+/* Mensagens de Sucesso ou Erro */
+.message {
+    text-align: center;
+    font-size: 20px;
+    color: #f39c12;
+    margin: 20px 0;
+}

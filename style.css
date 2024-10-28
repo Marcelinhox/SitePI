@@ -1,0 +1,230 @@
+/* Fonte personalizada para dar aparência de jogos antigos */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Definições Gerais */
+body {
+    font-family: 'Press Start 2P', cursive; /* Fonte pixelada para jogos */
+    background-color: #1b1b1b;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #f39c12;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #f39c12;
+    text-shadow: 2px 2px #c0392b; /* Efeito de sombra para destacar */
+}
+
+/* Estilo da Navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    background-color: #c0392b;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 3px solid #f39c12;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e74c3c;
+    transform: scale(1.1);
+}
+
+/* Container de Cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Estilo dos Cards */
+.card {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    border: 5px solid #f39c12;
+    border-radius: 0px; 
+    width: 320px; /* Aumentar a largura */
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-image {
+    width: 100%; /* Imagem ocupa toda a largura do card */
+    height: 400px; /* Altura fixa para uniformidade */
+    object-fit: cover; /* Mantém a proporção da imagem e preenche o espaço */
+    border-radius: 5px; /* Bordas levemente arredondadas na imagem */
+    margin-bottom: 10px; /* Espaço entre a imagem e o conteúdo */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efeito de elevação */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Sombra ao elevar */
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #f39c12;
+}
+
+.card p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 10px 0;
+}
+
+/* Estilo dos Links */
+.card a {
+    color: #ffffff;
+    background-color: #2ecc71;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: 3px solid #27ae60;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.card a:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+}
+
+
+/* Estilo do Rodapé */
+footer {
+    background-color: #111;
+    color: #f39c12;
+    text-align: center;
+    padding: 15px;
+    border-top: 5px solid #c0392b;
+    }
+
+/* Personalização para Títulos */
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+    color: #e74c3c;
+}
+
+/* Efeitos de Pixel Art */
+.card {
+    border: 5px solid #f39c12;
+    border-image: url('https://www.transparenttextures.com/patterns/white-brick-wall.png') 30 round; /* Efeito de borda pixelada */
+}
+
+/* Botões Retro */
+button {
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    background-color: #3498db;
+    padding: 10px 20px;
+    border: 3px solid #2980b9;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+/* modais teste */
+/* Estilo dos Modais */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed; /* Fixo */
+    z-index: 1; /* Na frente */
+    left: 0;
+    top: 0;
+    width: 100%; /* 100% da largura */
+    height: 100%; /* 100% da altura */
+    overflow: auto; /* Rolagem se necessário */
+    background-color: rgb(0,0,0); /* Fundo preto */
+    background-color: rgba(0,0,0,0.4); /* Fundo preto com opacidade */
+}
+
+
+.modal-content {
+    background-color: #1b1b1b; /* Cor de fundo do modal */
+    margin: 15% auto; /* Centraliza o modal */
+    padding: 20px;
+    border: 1px solid #f39c12; /* Borda do modal */
+    border-radius: 5px; /* Bordas arredondadas */
+    width: 80%; /* Largura do modal */
+    max-width: 500px; /* Largura máxima */
+}
+
+
+/* Estilo para os botões dentro do modal */
+.modal-content button {
+    background-color: #c0392b; /* Cor de fundo para o botão */
+    color: #ffffff; /* Cor do texto */
+    border: 3px solid #f39c12; /* Borda em amarelo */
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+    width: 100%; /* Para ocupar a largura total */
+    font-family: 'Press Start 2P', cursive; /* Fonte de estilo retro */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.modal-content button:hover {
+    background-color: #e74c3c; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+/* Estilo para o botão de fechar */
+.close-btn {
+    background-color: #2ecc71; /* Cor de fundo para o botão de fechar */
+    margin-top: 10px; /* Espaçamento acima do botão de fechar */
+}
+
+.close-btn:hover {
+    background-color: #27ae60; /* Cor de fundo ao passar o mouse */
+}
+
+
+
+/* Estilo dos campos de formulário */
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin: 10px 0; /* Margem entre os campos */
+    border: 1px solid #f39c12; /* Borda dos campos */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #2c2c2c; /* Fundo dos campos */
+    color: #fff; /* Cor do texto */
+}
+
+/* Estilo dos requisitos de senha */
+.requirements {
+    color: #e74c3c; /* Cor dos requisitos */
+    font-size: 12px; /* Tamanho da fonte */
+}
